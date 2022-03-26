@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+    <div id="maincontain"></div>
+    
+    <button onclick="add()">Add</button>
+    <button onclick="remove()">Remove</button>
+    <button onclick="removeall()">Remove All</button>
+
+
+
+
+    <script>
+function add()
+{
+    var inp=document.createElement("input");
+   var att=document.createAttribute("type");
+   
+   att.value="text";
+   
+   inp.setAttributeNode(att);
+   
+   var inp2=document.createElement("input");
+   var att2=document.createAttribute("type");
+   
+   att2.value="text";
+   
+   inp2.setAttributeNode(att2);
+   
+   var inp3=document.createElement("input");
+   var att3=document.createAttribute("type");
+   
+   att3.value="text";
+   
+   inp3.setAttributeNode(att3);
+   
+   var div=document.createElement("div");
+   
+   div.appendChild(inp);
+    div.appendChild(inp2);
+    div.appendChild(inp3);
+   
+   document.getElementById("maincontain").appendChild(div);
+   
+}
+
+function remove()
+{
+   var maincontainnew = document.getElementById("maincontain");
+   maincontain.removeChild(maincontain.childNodes[0]);
+}
+
+function removeall()
+{
+   document.getElementById("maincontain").innerHTML=" ";
+}
+
+    </script>
+</body>
+</html>

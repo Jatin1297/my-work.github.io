@@ -1,0 +1,32 @@
+table{
+    margin: 0 auto;
+}
+
+
+input{
+
+    font-size: 22px;
+    margin-bottom: 5px;
+    border: 3px solid rgb(114, 114, 114) ;
+    border-radius: 10px;
+    
+}
+
+button{
+    font-size: 28px;
+    background-color: rgb(114, 114, 114);
+    width: 69px;
+    height: 46px;
+    border-radius: 17px;
+    color: white;
+    margin: 3px;
+}
+
+.tabblebody{
+
+    display: inline-block;
+    border: 2px solid rgb(114, 114, 114);
+    background-color: cadetblue;
+    padding: 8px;
+    border-radius: 14px;
+}

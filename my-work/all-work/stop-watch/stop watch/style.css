@@ -1,0 +1,56 @@
+body{
+    background-color: #192130;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+
+color: silver;
+
+}
+
+.digit{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.tst{
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#btn-contain{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn{
+
+    padding: 7px 25px;
+    font-size: 25px;
+    margin: 0px 10px;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#start{
+background-color: rgb(24, 134, 52);
+
+
+}
+#stop{
+background-color: rgb(225, 65, 65);
+
+}
+
+#reset{
+
+    background-color: royalblue;
+}

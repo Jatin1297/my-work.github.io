@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfect resume</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1 class="text-center pt-5 pb-4">Perfect Resume</h1>
+            <div class="row">
+                
+                <div class="col-lg-6">
+                   
+                  <div class="form">
+                    <form >
+                       <ol type="1">
+                        <li> <label for="fname"><b>First Name:</b> </label></li>
+                        <input type="text" placeholder="e.g.jatin" onkeyup="resume()" class="form-control" id="name">
+                     <li>  <label for="Lname"><b>Last Name:</b> </label> </li>
+                       <input type="text" placeholder="e.g.singh" onkeyup="resume()" class="form-control" id="surname">
+                       <li>  <label for="Email"><b> E-mail:</b></label> </li>
+                       <input type="text" placeholder="e.g.jatin@gmail.com" onkeyup="resume()" class="form-control" id="email">
+                       <li>  <label for="Phone number"><b> Contact Number:</b></label> </li>
+                       <input type="number" placeholder="e.g.9977112255" onkeyup="resumeT()" class="form-control" id="Cont">
+                     <li>  <label for="City"><b>Address:</b> </label> </li>
+                       <input type="text" placeholder="e.g.delhi" onkeyup="resumeT()" class="form-control" id="add">
+                       <li>  <label for="Country"><b> Country:</b></label> </li>
+                       <input type="text" placeholder="e.g.india" onkeyup="resumeT()" class="form-control" id="country">
+                       <li>  <label for="Pincode"><b> Pincode:</b></label> </li>
+                       <input type="number" placeholder="e.g.110054" onkeyup="resumeT()"  class="form-control" id="pincode">
+                       
+                       
+
+
+                       </ol>
+                    </form>
+
+                  </div>
+                </div>
+
+                <!-- this is resume part -->
+
+                <div class="col-lg-6">
+
+                    <div  class="resume mb-5 text-center">
+
+                      <h3 class="d-inline"><span id="fname">Your Name</span></h3>
+                      <h3 class="d-inline"><span  id="lstname"></span></h3>
+                      <p><b>Email:</b>  <span id="eml">yourmail@.com</span></p>
+                      
+                      <hr>
+                      <div class="left text-left ">
+                        <h5 class="pb-2">Contact Details</h5>
+                        <p><b>Tell:</b>  <span id="tel"></span></p>
+                        <p><b>Address:</b>  <span id="Add"></span></p>
+                        <p><b>Contry:</b>  <span id="cntry"></span></p>
+                        <p><b>Pincode:</b>  <span id="pcode"></span></p>
+
+                       <div class="detail  mt-3"> <h5>Education</h5>
+                        <p>1997 - 2000
+                          Bachelor degree. Accounting.
+                          University of Northcap
+                          Norway</p>
+                        
+
+                          <h5>Courses & Diplomas</h5>
+
+                          <p>2010
+                            HTML Certificate. W3Schools.</p>
+                        <p>2011
+                          CSS Certificate. W3Schools.</p>
+                        </div>
+
+                      
+                      </div>
+                    
+                      <div class="right text-left">
+                        <h5>Objective</h5>
+                        <p>I am a highly-skilled Front-End Developer eager to join an online school. I have a five-years experience in training students in HTML, CSS and JavaScript. </p>
+
+
+                        <h5>Work Experience</h5>
+                        <p>March 2015 -
+                          Front-End Teacher
+                          University of Northcap
+                          www.uin.no</p>
+
+                          <h5>Skills</h5>
+                          <ul>
+                            <li>Effective communication</li>
+                            <li>Dependability</li>
+                            <li>Active listening</li>
+                            
+                          </ul>
+
+
+
+                      </div>
+
+
+
+                      </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+<script>
+function resume()
+{ 
+var name=document.getElementById("name").value;
+var sirname=document.getElementById("surname").value;
+var mail=document.getElementById("email").value;
+
+
+
+
+
+document.getElementById("fname").innerHTML=name;
+document.getElementById("lstname").innerHTML=sirname;
+document.getElementById("eml").innerHTML=mail;
+
+
+}
+
+function resumeT()
+{
+var tell=document.getElementById("Cont").value;
+var ad=document.getElementById("add").value;
+var con=document.getElementById("country").value;
+var pcod=document.getElementById("pincode").value;
+
+
+
+document.getElementById("tel").innerHTML=tell;
+document.getElementById("Add").innerHTML=ad;
+document.getElementById("cntry").innerHTML=con;
+document.getElementById("pcode").innerHTML=pcod;
+
+}
+
+
+</script>
+
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

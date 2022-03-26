@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+<input type="text" id="name">
+<input type="text" id="email">
+
+<button type="button" onclick="save();">save</button>
+
+<script>
+function save()
+{
+var name=document.getElementById("name").value;
+var email = document.getElementById("email").value;
+
+ localStorage.setItem("localname", name);
+  localStorage.setItem("localemail", email);
+ }
+
+</script>
+
+</body>
+</html>
