@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(228, 228, 228);
+}
+
+.resume {
+  height: 550px;
+  width: 520px;
+  background-color: white;
+  padding: 15px;
+  border: 2px solid red;
+}
+
+.form {
+  justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+}
+
+.left {
+  height: 400px;
+  width: 230px;
+  line-height: 15px;
+  padding: 1px;
+  border-right: 1px solid red;
+  display: inline-block;
+}
+
+.pb-1 {
+  border-bottom: 2px solid red;
+  width: 180px;
+}
+.right {
+  height: 400px;
+  width: 250px;
+  float: right;
+  padding: 5px;
+}
